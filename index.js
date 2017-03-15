@@ -1,5 +1,3 @@
-'use strict';
-
 function doEval(self, __pseudoworker_script) {
   /* jshint unused:false */
   (function () {

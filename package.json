@@ -1,9 +1,9 @@
 {
   "name": "pseudo-worker",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Tiny and mostly spec-compliant WebWorker polyfill",
   "main": "index.js",
-  "repository": "https://github.com/nolanlawson/pseudo-worker.git",
+  "repository": "https://github.com/hmhco/pseudo-worker.git",
   "scripts": {
     "prepublish": "npm run build",
     "build": "rimraf dist && mkdirp dist && browserify -s PseudoWorker -p bundle-collapser/plugin . > dist/pseudo-worker.js && browserify -s PseudoWorker -p bundle-collapser/plugin polyfill.js > dist/pseudo-worker.polyfill.js && uglifyjs -mc < dist/pseudo-worker.js > dist/pseudo-worker.min.js && uglifyjs -mc < dist/pseudo-worker.polyfill.js > dist/pseudo-worker.polyfill.min.js",
